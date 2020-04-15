@@ -59,3 +59,9 @@ https://stackoverflow.com/questions/18883601/function-to-calculate-distance-betw
       var d = R * c;
       return d;
     }
+
+Pode-se mostrar os pontos no mapa: Google-map-react
+https://github.com/google-map-react/google-map-react
+
+Publicação:
+Projeto publicado no Zeit.co (empresa que criou e mantém o next)
