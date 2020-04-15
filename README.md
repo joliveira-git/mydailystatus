@@ -65,3 +65,27 @@ https://github.com/google-map-react/google-map-react
 
 Publicação:
 Projeto publicado no Zeit.co (empresa que criou e mantém o next)
+
+- Now-Cli: ferramenta que permite subir o projeto para o Zeit
+sudo npm install -g now@latest
+autenticar com o usuário do git-hub
+- Para saber quem está logado:
+now whoami
+- Para deslogar:
+now logout
+- Para logar:
+now login
+
+para colocar algo no ar:
+now 
+
+incluir as informações sigilosas de autenticação do Auth0 criando segredos para cada variável de ambiente:
+now secrets add auth0-client-id valor-a-ser-armazenado
+now secrets add auth0-client-secret valor-a-ser-armazenado
+now secrets add auth0-redirect-uri https://dominio-zeit-aplicacao/rota-de-callback
+now secrets add auth0-logout-redirect-uri https://dominio-zeit-aplicacao
+
+criar o arquivo now.json para mapear as variáveis de ambiente com as secrets do zeit (usar @nome-secret)
+rodar now novamente para compilar o projeto e subir para a produção
+
+
