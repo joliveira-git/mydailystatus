@@ -1,6 +1,8 @@
 # My Daily Status
 Aplicativo escrito em React usando Next no modo SSR (Server Side Rendering)
 
+Projeto Publicado em: https://mydailystatus.joliveira-git.now.sh
+
 Para rodar a aplicação: npm run dev
 
 Tecnologias utilizadas:
@@ -84,8 +86,15 @@ now secrets add auth0-client-id valor-a-ser-armazenado
 now secrets add auth0-client-secret valor-a-ser-armazenado
 now secrets add auth0-redirect-uri https://dominio-zeit-aplicacao/rota-de-callback
 now secrets add auth0-logout-redirect-uri https://dominio-zeit-aplicacao
+ficar atento pq há um domínio de produção e outro de projeto que é gerado a cada vez que se sobe o projeto.
 
 criar o arquivo now.json para mapear as variáveis de ambiente com as secrets do zeit (usar @nome-secret)
 rodar now novamente para compilar o projeto e subir para a produção
 
+Ao realizar o teste da aplicação: internal server error
+Acrescentar o domínio da aplicação na lista de URLs de Callback e Logout do Auth0.
 
+Para subir para a produção
+now --prod
+
+É possível personalizar a tela de login do Auth0 em Universal Login (por exemplo: usar copy image addres do logo a aplicação)
